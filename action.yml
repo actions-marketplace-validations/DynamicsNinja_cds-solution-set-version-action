@@ -1,0 +1,18 @@
+name: "CDS Solution Set Version Action"
+description: "Set version of CDS solution"
+inputs:
+  solution-xml-path:
+    description: "Path to the folder where the Solution.xml is located"
+    required: true
+  solution-version:
+    description: "Version of the solution"
+    required: true
+outputs:
+  result:
+    description: "Returns 'success' if XML has been updated"
+runs:
+  using: "node12"
+  main: "index.js"
+branding:
+  icon: "edit"
+  color: "purple"
